@@ -22,22 +22,57 @@
     <link href="../../botchat.css" rel="stylesheet" />
 
     <style>
-      .wc-chatview-panel {
-        height: 800px;
+      .wc-header {
+        background-color: #EAEAEB;
+        height: 60px;
+        color: #747474;
         position: relative;
-        width: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
+
+      .wc-header span {
+        font-family: "Lato";
+        font-size: 20px;
+        /* position: absolute;
+        top: 50%;
+        margin-top: -10px; */
+      }
+
+      .wc-chatview-panel {
+        height: 736px;
+        position: relative;
+        width: 100%;
+        background-color: white;
+      }
+
+      .wc-message-from-me .wc-message-content {
+        background-color: rgb(33, 252, 194);
+        color: #ffffff; 
+      }
+
+      .wc-message-from-me svg.wc-message-callout path {
+        fill: rgb(33, 252, 194);
+      }
+
+      .we-message-from-bot  span {
+        background-color: rgb(200, 203, 202);
+      }
+
     </style>
 
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    
   </head>
   <body>
     <div id="BotChatGoesHere"></div>
 
     <script src="../../botchat.js"></script>
-
+    <script src="https://decscibotdev.blob.core.windows.net/html/custom-cards.js"></script>
+    
     <script type="text/babel">
       const params = BotChat.queryParams(location.search);
 
@@ -51,8 +86,7 @@
           }}
           directLine={{
             domain: params.domain,
-            secret: params.s,
-            token: params.t,
+            secret: "S-iSce-_MQQ.cwA.2dA.QvbDQIiX-f0oKPeKOLVxh_zpu1pXTEhRwtLukIevar8",
             webSocket: params.webSocket && params.webSocket === 'true' // defaults to true
           }}
           locale={ params.locale }
