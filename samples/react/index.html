@@ -22,6 +22,9 @@
     <link href="../../botchat.css" rel="stylesheet" />
 
     <style>
+
+      /* header */
+
       .wc-header {
         background-color: #EAEAEB;
         height: 60px;
@@ -35,10 +38,9 @@
       .wc-header span {
         font-family: "Lato";
         font-size: 20px;
-        /* position: absolute;
-        top: 50%;
-        margin-top: -10px; */
       }
+
+      /* panel */
 
       .wc-chatview-panel {
         height: 736px;
@@ -47,18 +49,33 @@
         background-color: white;
       }
 
+      /* user dialogue bubble */
       .wc-message-from-me .wc-message-content {
-        background-color: rgb(33, 252, 194);
+        background-color: #0cb;
         color: #ffffff; 
       }
 
       .wc-message-from-me svg.wc-message-callout path {
-        fill: rgb(33, 252, 194);
+        fill: #0cb;
       }
 
-      .we-message-from-bot  span {
-        background-color: rgb(200, 203, 202);
+      /* bot dialogue bubble */
+
+      .wc-message-from-bot .wc-message-content {
+        background-color: white;
+        border-radius: 15px;
       }
+
+      .wc-message-from-bot svg.wc-message-callout path {
+        fill: white;
+      }
+
+      .wc-message.wc-message-from-bot::before {
+        /* content: "hi"; */
+        content: url(../../asset/bot-small.png)
+      }
+
+
 
     </style>
 
