@@ -38,6 +38,7 @@
       .wc-header span {
         font-family: "Lato";
         font-size: 20px;
+        text-align: center;
       }
 
       /* panel */
@@ -62,18 +63,24 @@
       /* bot dialogue bubble */
 
       .wc-message-from-bot .wc-message-content {
-        background-color: white;
-        border-radius: 15px;
+        background-color: rgb(109, 167, 255);
+        border-top-right-radius: 20px;
+        border-top-left-radius: 5px 2px;
+        border-bottom-right-radius: 5px 2px;
+        border-bottom-left-radius: 20px;
       }
 
       .wc-message-from-bot svg.wc-message-callout path {
-        fill: white;
+        /* fill: rgb(255, 250, 109); */
       }
 
       .wc-message.wc-message-from-bot::before {
         /* content: "hi"; */
         content: url(../../asset/bot-small.png)
       }
+
+
+     
 
 
 
