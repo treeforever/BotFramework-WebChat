@@ -20,12 +20,13 @@
     <title>Bot Chat</title>
 
     <link href="../../botchat.css" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
     <style>
 
       /* header */
       body {
-        font-family: Lato;
+        font-family: 'Open Sans';
       }
 
       .wc-header {
@@ -39,7 +40,7 @@
       }
 
       .wc-header span {
-        font-family: "Lato";
+        font-family: 'Open Sans';
         font-size: 20px;
         text-align: center;
       }
@@ -47,9 +48,15 @@
       /* panel */
 
       .wc-chatview-panel {
-        height: 736px;
+        height: 79%;
         position: relative;
-        width: 100%;
+        width: 105%;
+        background-color: white;
+      }
+
+      /* list of dialogues */
+
+      .wc-message-wrapper list {
         background-color: white;
       }
 
@@ -70,9 +77,9 @@
         border-bottom-left-radius: 20px;
       }
 
-      .wc-message-from-me svg.wc-message-callout path {
+      .wc-message-from-me svg.wc-message-callout {
         /* hide triangle on bubble */
-        fill: #FFFFFF;
+        display: none;
       }
 
       /* bot dialogue bubble */
@@ -85,8 +92,8 @@
         border-bottom-left-radius: 20px;
       }
 
-      .wc-message-from-bot svg.wc-message-callout path {
-        /* fill: rgb(255, 250, 109); */
+      .wc-message-from-bot svg.wc-message-callout {
+        display: none;
       }
 
       .wc-message.wc-message-from-bot::before {
@@ -95,7 +102,7 @@
       }
 
       .wc-message-wrapper {
-        margin: 35px 0;
+        margin: 35px 5px;
 
         /* message transition */
         animation: animationFrames 2s;
@@ -116,6 +123,18 @@
           /*max-height: 2000px;*/ } 
       }
 
+      /* input box */
+
+      .wc-console {
+        background-color: #dbdee1;
+      }
+
+      .wc-console input {
+        background-color: #dbdee1;
+        font-family: 'Open Sans';
+        font-size: 15px;
+      }
+
      
 
 
@@ -128,7 +147,11 @@
     
   </head>
   <body>
-    <div id="BotChatGoesHere"></div>
+    <div style="width: 500px; height: 1050px; background-image: url('http://nexxt.in/wp-content/uploads/2017/10/cellphone_frame_white_grey.png'); background-size: 100% 100%;">
+      <div style="height: 14.8%;">&nbsp;</div>
+        <div id="BotChatGoesHere" style="width: 81%; height: 90%; margin-left: 8%;">
+        </div>
+      </div>
 
     <script src="../../botchat.js"></script>
     <script src="https://decscibotdev.blob.core.windows.net/html/custom-cards.js"></script>
