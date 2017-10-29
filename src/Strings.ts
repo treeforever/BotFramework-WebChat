@@ -20,7 +20,7 @@ interface LocalizedStrings {
 
 const localizedStrings: LocalizedStrings = {
     'en-us': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Send",
         unknownFile: "[File of type '%1']",
         unknownCard: "[Unknown Card '%1']",
@@ -35,7 +35,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Listening..."
     },
     'nb-no': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Send",
         unknownFile: "[Fil av typen '%1']",
         unknownCard: "[Ukjent Kort '%1']",
@@ -50,7 +50,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Lytter..."
     },
     'da-dk': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Send",
         unknownFile: "[Fil af typen '%1']",
         unknownCard: "[Ukendt kort '%1']",
@@ -65,7 +65,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Lytter..."
     },
     'de-de': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Senden",
         unknownFile: "[Datei vom Typ '%1']",
         unknownCard: "[Unbekannte Card '%1']",
@@ -80,7 +80,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Hören..."
     },
     'pl-pl': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Wyślij",
         unknownFile: "[Plik typu '%1']",
         unknownCard: "[Nieznana karta '%1']",
@@ -110,7 +110,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "прослушивание..."
     },
     'nl-nl': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Verstuur",
         unknownFile: "[Bestand van het type '%1']",
         unknownCard: "[Onbekende kaart '%1']",
@@ -155,7 +155,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Ouvindo..."
     },
     'fr-fr': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Envoyer",
         unknownFile: "[Fichier de type '%1']",
         unknownCard: "[Carte inconnue '%1']",
@@ -170,7 +170,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Écoute..."
     },
     'es-es': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Enviar",
         unknownFile: "[Archivo de tipo '%1']",
         unknownCard: "[Tarjeta desconocida '%1']",
@@ -200,7 +200,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "Ακούγοντας..."
     },
     'it-it': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Invia",
         unknownFile: "[File di tipo '%1']",
         unknownCard: "[Card sconosciuta '%1']",
@@ -260,7 +260,7 @@ const localizedStrings: LocalizedStrings = {
         listeningIndicator: "聽緊你講嘢..."
     },
     'cs-cz': {
-        title: "What kind of Canadian are you",
+        title: "What Kind of Canadian Are You?",
         send: "Odeslat",
         unknownFile: "[Soubor typu '%1']",
         unknownCard: "[Neznámá karta '%1']",

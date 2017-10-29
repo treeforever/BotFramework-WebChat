@@ -31,6 +31,7 @@
     "@types/react": "15.0.38",
     "botframework-directlinejs": "0.9.12",
     "core-js": "2.4.1",
+    "halogen": "^0.2.0",
     "markdown-it": "8.3.1",
     "microsoft-adaptivecards": "0.6.1",
     "microsoft-speech-browser-sdk": "0.0.1",
