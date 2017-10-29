@@ -27,16 +27,18 @@
       /* header */
       body {
         font-family: 'Open Sans';
+        color: #202020;
       }
 
       .wc-header {
-        background-color: #EAEAEB;
+        background-color: #F2F2F2;
         height: 60px;
-        color: #747474;
+        color: #202020;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        box-shadow: none;
       }
 
       .wc-header span {
@@ -60,7 +62,7 @@
         background-color: white;
       }
 
-      /* font in bubbles */
+      /* all dialogue bubbles */
       .wc-message-content {
         text-align: justify;
         padding: 16px 20px;
@@ -68,9 +70,17 @@
 
       /* user dialogue bubble */
       .wc-message-from-me .wc-message-content {
-        background-color: #0cb;
         color: #ffffff; 
 
+        /* background-color: #0cb; */
+        background: #0cc7b7;
+background: -moz-linear-gradient(-45deg, #0cc7b7 0%, #0cc7b7 91%, #0cccb6 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, #0cc7b7), color-stop(91%, #0cc7b7), color-stop(100%, #0cccb6));
+background: -webkit-linear-gradient(-45deg, #0cc7b7 0%, #0cc7b7 91%, #0cccb6 100%);
+background: -o-linear-gradient(-45deg, #0cc7b7 0%, #0cc7b7 91%, #0cccb6 100%);
+background: -ms-linear-gradient(-45deg, #0cc7b7 0%, #0cc7b7 91%, #0cccb6 100%);
+background: linear-gradient(135deg, #0cc7b7 0%, #0cc7b7 91%, #0cccb6 100%);
+filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cc7b7', endColorstr='#0cccb6', GradientType=1 )';
         border-top-right-radius: 20px;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -90,6 +100,8 @@
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 20px;
+
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
       }
 
       .wc-message-from-bot svg.wc-message-callout {
@@ -111,6 +123,7 @@
         margin-bottom: 10px;
         overflow: hidden;
         position: relative;
+        /* transform: translateY(500px); */
         /*transition: max-height 2s ease-in-out;*/ }
 
       @keyframes animationFrames {
@@ -120,20 +133,79 @@
         20% {
           opacity: 1; }
         100% {
+          opacity: 1
           /*max-height: 2000px;*/ } 
       }
 
       /* input box */
 
       .wc-console {
-        background-color: #dbdee1;
+        background-color: #F2F2F2;
+        border: none;
       }
 
       .wc-console input {
-        background-color: #dbdee1;
+        background-color: #F2F2F2;
         font-family: 'Open Sans';
         font-size: 15px;
       }
+
+      .wc-message-groups {
+        /* bottom: 480px; */
+        left: 0;
+        transform: translateY(10px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        /* top: 30px; */
+        transition: transform .5s cubic-bezier(0,0,.5,1);;
+    }
+
+    /* adaptive card*/
+
+    .ac-container {
+      padding-bottom: 16px;
+    }
+
+    .ac-container ul {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wc-card {
+      border: none;
+      background-color: none;
+      margin: auto;
+    }
+
+    .wc-card button {
+      width: 40%;
+      margin: auto;
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 15px;
+      font-family: 'Open Sans';
+      margin-top: 10px;
+      margin-bottom: 16px;
+      padding: 8px 16px;
+      border: none;
+      color: white;
+      background: #0cc7b7;
+    }
+
+    .wc-card button:hover {
+      color: white;
+      background: #0cc7b7;
+    } 
+    
+    .wc-card button:active {
+      color: white;
+      background: #0cc7b7;
+    } 
+
 
      
 
