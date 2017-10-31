@@ -63,6 +63,12 @@
         background-color: white;
       }
 
+      /* to make avatar inline */
+      
+      .wc-message {
+        display: flex;
+      }
+
       /* all dialogue bubbles */
       .wc-message-content {
         text-align: justify;
@@ -110,12 +116,18 @@
       }
 
       .wc-message.wc-message-from-bot::before {
-        /* content: url(../../asset/bot-small.png); */
         content: url(../../asset/inca-circle.png);
+        margin-right: 15px;
       }
 
+      /* hide bubble for rank order*/
+
+      /* :nth-child(3 of .wc-message-group-content){
+
+      } */
+
       .wc-message-wrapper {
-        margin: 35px 5px;
+        margin: 35px 0;
 
         /* message transition */
         animation: animationFrames 2s;
@@ -217,6 +229,7 @@
     .wc-card button:active {
       color: white;
       background: #0cc7b7;
+      border: none;
     } 
 
 
@@ -239,7 +252,7 @@
       </div>
 
     <script src="../../botchat.js"></script>
-    <script src="https://decscibotdev.blob.core.windows.net/html/custom-cards.js"></script>
+    <script src="http://localhost:8080/dist/custom-cards.js"></script>
     
     <script type="text/babel">
       const params = BotChat.queryParams(location.search);
