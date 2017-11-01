@@ -99,6 +99,11 @@
         display: none;
       }
 
+      /* hide timestamp */
+      .wc-message-from {
+        /* display: none; */
+      }
+
       /* bot dialogue bubble */
 
       .wc-message-from-bot .wc-message-content {
@@ -108,7 +113,7 @@
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 20px;
 
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 11px 1px rgb(218, 226, 226);
       }
 
       .wc-message-from-bot svg.wc-message-callout {
@@ -200,6 +205,11 @@
       margin-right: auto; */
     }
 
+    .ac-container li:hover {
+      color: #0e786b;;
+      /* font-size: 17px; */
+    }
+
     .wc-card {
       border: none;
       background-color: none;
@@ -219,22 +229,73 @@
       border: none;
       color: white;
       background: #0cc7b7;
+      box-shadow: 0 5px 10px #b8d5d2;
+    }
+
+    .wc-card {
+      position: relative;
+      overflow: hidden;
     }
 
     .wc-card button:hover {
-      color: white;
+      color: #0e786b;
       background: #0cc7b7;
     } 
     
-    .wc-card button:active {
-      color: white;
-      background: #0cc7b7;
-      border: none;
-    } 
+    .wc-card button:focus {
+      outline: none;
+      box-shadow: 0 6px 12px #64b3ab;
+    }
 
+    /* choose X from many */
+    .ac-selectable img {
+      border-radius: 6px;
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
 
-     
+    .ac-selectable img:hover {
+      opacity: .7;
+    }
 
+    .ac-selectable img:active {
+      border-radius: 100%;
+    }
+    
+    /* rippe effect */
+/* button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(10, 10);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(20, 20);
+  }
+}
+
+button:focus:not(:active)::after {
+  animation: ripple 0.5s ease-out;
+} */
 
 
     </style>
@@ -245,7 +306,7 @@
     
   </head>
   <body>
-    <div style="width: 500px; height: 1050px; background-image: url('http://nexxt.in/wp-content/uploads/2017/10/cellphone_frame_white_grey.png'); background-size: 100% 100%;">
+    <div style="width: 550px; height: 1155px; background-image: url('http://nexxt.in/wp-content/uploads/2017/10/cellphone_frame_white_grey.png'); background-size: 100% 100%;">
       <div style="height: 14.8%;">&nbsp;</div>
         <div id="BotChatGoesHere" style="width: 81%; height: 90%; margin-left: 8%;">
         </div>
@@ -267,7 +328,7 @@
           }}
           directLine={{
             domain: params.domain,
-            secret: "S-iSce-_MQQ.cwA.2dA.QvbDQIiX-f0oKPeKOLVxh_zpu1pXTEhRwtLukIevar8",
+            secret: params.secret,
             webSocket: params.webSocket && params.webSocket === 'true' // defaults to true
           }}
           locale={ params.locale }

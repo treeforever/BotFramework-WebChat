@@ -114,9 +114,7 @@ class ShellContainer extends React.Component<Props, {}> implements ShellFunction
                     />
                 </div>
                 <label className={sendButtonClassName} onClick={ () => this.onClickSend() } >
-                    <svg>
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g><path d="M34,49.5 L66,36 L58.8029833,64 L49.636666,58.0433464 L45.6303881,63.227073 L42.4213168,53.8386587 L34,49.5 Z M45.7269969,60.344284 L47.3699394,55.4113422 L60.5186742,41.4369046 L43.8706012,53.3981552 L45.7269969,60.344284 Z"/></g></g>
-                    </svg>
+                    <img src="../../asset/send.svg"/>
                 </label>
 
                 <label className={micButtonClassName} onClick={ () => this.onClickMic() } >
